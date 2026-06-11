@@ -1,0 +1,103 @@
+# Guilda
+
+> Plataforma brasileira de co-founding que conecta Builders (técnicos/desenvolvedores) e Sellers (negócios/marketing/vendas) para criar startups juntos. Funciona como um matching gamificado estilo RPG para empreendedores encontrarem seus cofundadores ideais.
+
+## Sobre a Guilda
+
+A Guilda resolve um dos maiores problemas do ecossistema de startups: encontrar o cofundador certo. Desenvolvedores brilhantes que não sabem vender e profissionais de negócios que não sabem programar se encontram aqui para construir startups juntos.
+
+- Fundada no Brasil
+- Foco em early-stage startups
+- Modelo freemium com planos pagos
+- Programa de aceleração próprio
+- Contato: contato@guilda.app.br
+
+## Páginas Principais
+
+- [Home](https://www.guilda.app.br/): Página principal com apresentação da plataforma
+- [Para Builders](https://www.guilda.app.br/builders): Landing page para desenvolvedores e técnicos
+- [Para Sellers](https://www.guilda.app.br/sellers): Landing page para profissionais de negócios e vendas
+- [Ferramentas Gratuitas](https://www.guilda.app.br/ferramentas-empreendedores): Hub com 20+ ferramentas gratuitas para empreendedores
+- [Blog](https://www.guilda.app.br/blog): Artigos sobre empreendedorismo, startups e co-founding
+- [Startups](https://www.guilda.app.br/startups): Diretório de projetos e startups da comunidade
+- [Vagas](https://www.guilda.app.br/vagas): Oportunidades de co-founding e vagas em startups
+- [Pricing](https://www.guilda.app.br/pricing): Planos e preços
+- [FAQ](https://www.guilda.app.br/faq): Perguntas frequentes
+- [Aceleração](https://www.guilda.app.br/aceleracao): Programa de aceleração de startups
+
+## Ferramentas Gratuitas
+
+- [Calculadora de Equity](https://www.guilda.app.br/ferramentas-empreendedores/equity-calculator): Calcule a divisão de participação societária entre cofundadores
+- [Calculadora de Runway](https://www.guilda.app.br/ferramentas-empreendedores/runway-calculator): Estime quanto tempo seu caixa vai durar
+- [Gerador de Contrato](https://www.guilda.app.br/ferramentas-empreendedores/contract-generator): Gere contratos de sociedade e vesting
+- [Quiz de Arquétipo](https://www.guilda.app.br/ferramentas-empreendedores/archetype-quiz): Descubra se você é Builder ou Seller
+- [Unit Economics](https://www.guilda.app.br/ferramentas-empreendedores/unit-economics): Calcule CAC, LTV e métricas unitárias
+- [Calculadora de Valuation](https://www.guilda.app.br/ferramentas-empreendedores/valuation-calculator): Estime o valuation da sua startup
+- [Simulador de Cap Table](https://www.guilda.app.br/ferramentas-empreendedores/cap-table): Simule rodadas de investimento e diluição
+- [Otimizador de Burn Rate](https://www.guilda.app.br/ferramentas-empreendedores/burn-rate-optimizer): Otimize sua taxa de queima de caixa
+- [Business Model Canvas](https://www.guilda.app.br/ferramentas-empreendedores/business-model): Canvas de modelo de negócio interativo
+- [TAM SAM SOM](https://www.guilda.app.br/ferramentas-empreendedores/tam-sam-som): Calcule o tamanho do seu mercado
+- [Mapa de Empatia](https://www.guilda.app.br/ferramentas-empreendedores/empathy-map): Gerador de mapa de empatia para entender seu cliente
+- [Análise SWOT](https://www.guilda.app.br/ferramentas-empreendedores/swot): Análise de forças, fraquezas, oportunidades e ameaças
+- [Customer Development](https://www.guilda.app.br/ferramentas-empreendedores/customer-dev): Framework de desenvolvimento de clientes
+- [Guia LGPD](https://www.guilda.app.br/ferramentas-empreendedores/lgpd-guide): Guia prático de adequação à LGPD para startups
+- [Guia de Recrutamento](https://www.guilda.app.br/ferramentas-empreendedores/recruiting-guide): Como contratar os primeiros funcionários
+- [Guia de Data Room](https://www.guilda.app.br/ferramentas-empreendedores/dataroom-guide): Como montar um data room para investidores
+- [MVP com Vibe Coding](https://www.guilda.app.br/ferramentas-empreendedores/mvp-vibecoding): Guia para criar MVPs com ferramentas no-code/low-code
+- [Roadmap de Conhecimento](https://www.guilda.app.br/ferramentas-empreendedores/knowledge-roadmap): Trilha de aprendizado para empreendedores
+- [Guilda IA MVP Builder](https://www.guilda.app.br/ferramentas-empreendedores/guilda-ia-mvp): Crie seu MVP com inteligência artificial
+- [Cold Outreach Generator](https://www.guilda.app.br/ferramentas-empreendedores/cold-outreach): Gerador de mensagens de prospecção
+- [Calculadora de Markup](https://www.guilda.app.br/ferramentas-empreendedores/markup-calculator): Calcule o markup ideal dos seus produtos
+- [Simulador de Taxas de Cartão](https://www.guilda.app.br/ferramentas-empreendedores/card-fee-simulator): Compare taxas de maquininhas de cartão
+- [Calculadora de Ponto de Equilíbrio](https://www.guilda.app.br/ferramentas-empreendedores/breakeven-calculator): Calcule o break-even do seu negócio
+- [Calculadora de ROI](https://www.guilda.app.br/ferramentas-empreendedores/roi-calculator): Calcule o retorno sobre investimento em marketing
+- [Gerador de Propostas Comerciais](https://www.guilda.app.br/ferramentas-empreendedores/proposal-generator): Crie propostas comerciais profissionais
+- [Quiz Saúde Empresarial](https://www.guilda.app.br/ferramentas-empreendedores/business-health-quiz): Avalie a saúde do seu negócio
+
+## Artigos do Blog
+
+- [Como Captar Investimento Anjo para Sua Startup](https://www.guilda.app.br/blog/como-captar-investimento-anjo-startup): Guia prático do primeiro cheque ao term sheet
+- [Go-to-Market para Startups](https://www.guilda.app.br/blog/go-to-market-startup-estrategia): Como criar uma estratégia GTM que funciona na prática
+- [Como Conseguir os Primeiros Clientes da Sua Startup](https://www.guilda.app.br/blog/como-conseguir-primeiros-clientes-startup): Do zero à primeira venda
+- [Product Market Fit](https://www.guilda.app.br/blog/product-market-fit-como-alcancar): O que é, como medir e como alcançar
+- [Tipos de Modelo de Negócio para Startups](https://www.guilda.app.br/blog/tipos-modelo-negocio-startups): SaaS, Marketplace, Freemium e mais
+- [Ideias de Startup para 2026](https://www.guilda.app.br/blog/ideias-startup-2026): Setores quentes e nichos promissores no Brasil
+- [Side Project: Como Começar](https://www.guilda.app.br/blog/side-project-como-comecar): Como validar sua ideia sem largar o emprego
+- [Empreender Depois dos 30](https://www.guilda.app.br/blog/empreender-depois-dos-30): Por que a experiência é sua maior vantagem
+- [Startups de IA no Brasil 2026](https://www.guilda.app.br/blog/startups-inteligencia-artificial-brasil-2026): Setores, oportunidades e como entrar
+- [7 Sinais de Que Você Deveria Empreender](https://www.guilda.app.br/blog/sinais-que-voce-deveria-empreender): Mesmo sem ter certeza
+- [Habilidades de Vendas para Founders Técnicos](https://www.guilda.app.br/blog/habilidades-de-vendas-para-founders-tecnicos): Essenciais para devs que querem empreender
+- [Como Funciona a Aceleração de Startups](https://www.guilda.app.br/blog/como-funciona-aceleracao-startups): Tipos, critérios e como escolher
+- [Como Criar uma Startup do Zero](https://www.guilda.app.br/blog/como-criar-startup-do-zero): Guia definitivo para tirar sua ideia do papel
+- [Como Avaliar um Cofundador](https://www.guilda.app.br/blog/como-avaliar-cofundador-startup): Red flags, critérios e testes práticos
+- [Como Montar o Time da Startup](https://www.guilda.app.br/blog/como-montar-time-startup): Estrutura ideal e primeiras contratações
+- [Acordo entre Cofundadores](https://www.guilda.app.br/blog/acordo-entre-cofundadores-startup): Vesting, equity e cláusulas essenciais
+- [Como Criar um MVP](https://www.guilda.app.br/blog/como-criar-mvp-startup): Do conceito ao produto mínimo viável
+- [Dev Empreendedor](https://www.guilda.app.br/blog/dev-empreendedor-como-comecar): Como desenvolvedores podem empreender
+- [Validar Ideia de Startup](https://www.guilda.app.br/blog/validar-ideia-de-startup): Métodos práticos de validação
+- [Builder ou Seller?](https://www.guilda.app.br/blog/builder-ou-seller-cofundador): Descubra qual perfil de cofundador complementa o seu
+- [Como Entrar no Mercado de Startups em Vendas](https://www.guilda.app.br/blog/como-entrar-mercado-startups-vendas): Guia para profissionais de vendas
+- [Cofundador Técnico: Como Encontrar](https://www.guilda.app.br/blog/cofundador-tecnico-como-encontrar): Guia para quem busca um dev cofundador
+- [Como Encontrar Cofundador de Startup](https://www.guilda.app.br/blog/como-encontrar-cofundador-startup): Estratégias e plataformas
+- [Guilda IA MVP Builder](https://www.guilda.app.br/blog/guilda-ia-mvp-builder-crie-seu-mvp-com-inteligencia-artificial): Crie seu MVP com inteligência artificial
+- [10 Sinais de Empresa Saudável](https://www.guilda.app.br/blog/empresa-saudavel-10-sinais-melhorar-gestao): Como melhorar a gestão
+- [Propostas Comerciais que Fecham Vendas](https://www.guilda.app.br/blog/propostas-comerciais-que-fecham-vendas): Técnicas práticas
+- [ROI de Marketing Digital](https://www.guilda.app.br/blog/roi-marketing-digital-como-saber-retorno): Como medir o retorno
+- [Taxas de Cartão](https://www.guilda.app.br/blog/taxas-cartao-como-parar-perder-dinheiro-vendas): Como parar de perder dinheiro nas vendas
+- [Ponto de Equilíbrio](https://www.guilda.app.br/blog/ponto-equilibrio-quanto-empresa-precisa-vender): Quanto sua empresa precisa vender
+- [Como Precificar Produtos](https://www.guilda.app.br/blog/como-precificar-produtos-guia-markup): Guia de markup e precificação
+- [Due Diligence para Investidores](https://www.guilda.app.br/blog/due-diligence-investidores-checklist-completo): Checklist completo
+- [Métricas SaaS](https://www.guilda.app.br/blog/metricas-saas-startup-acompanhar): KPIs essenciais para acompanhar
+- [Bootstrapping vs Investimento](https://www.guilda.app.br/blog/bootstrapping-vs-investimento-qual-escolher): Qual caminho escolher
+- [Quanto Pagar ao Primeiro Funcionário](https://www.guilda.app.br/blog/quanto-pagar-primeiro-funcionario-startup): Guia salarial para startups
+- [Como Validar Ideia Sem Dinheiro](https://www.guilda.app.br/blog/como-validar-ideia-startup-sem-dinheiro): Validação com orçamento zero
+- [Vesting e Ações para Cofundadores](https://www.guilda.app.br/blog/vesting-acoes-cofundadores-guia-completo): Guia completo de vesting
+- [Divisão de Participação Societária](https://www.guilda.app.br/blog/como-dividir-participacao-societaria-startup): Como dividir o equity
+- [Cultura de Startup](https://www.guilda.app.br/blog/cultura-startup-times-alta-performance): Como construir times de alta performance
+- [Pitch Deck para Investidores](https://www.guilda.app.br/blog/pitch-deck-investidores-modelo): Modelo e template prático
+- [Networking para Empreendedores](https://www.guilda.app.br/blog/networking-empreendedores-guia-pratico): Guia prático de networking
+- [MVP Lean Startup](https://www.guilda.app.br/blog/mvp-lean-startup-construir-rapido): Como construir rápido e validar
+- [Erros Fatais em Sociedade de Startup](https://www.guilda.app.br/blog/erros-fatais-sociedade-startup): Os erros que destroem parcerias
+- [Growth Hacking para Startups](https://www.guilda.app.br/blog/growth-hacking-startups-iniciantes): Guia para iniciantes
+- [Builder vs Seller: Qual Seu Perfil?](https://www.guilda.app.br/blog/builder-vs-seller-qual-seu-perfil): Descubra seu arquétipo empreendedor
+- [Como Encontrar o Cofounder Ideal](https://www.guilda.app.br/blog/como-encontrar-cofounder-ideal): Guia completo de busca

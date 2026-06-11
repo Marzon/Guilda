@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    
+    <!-- Open Graph (MUST be before any scripts for WhatsApp crawler) -->
+    <meta property="og:type" content="website" />
+    
+    
+    <meta property="og:image" content="https://kcyyelhrxlpjdujmtytm.supabase.co/storage/v1/object/public/og-images/og-image.png">
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="https://www.guilda.app.br/" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:locale:alternate" content="es_ES" />
+    <meta property="og:site_name" content="Guilda" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@GuildaApp" />
+    
+    
+    <meta name="twitter:image" content="https://kcyyelhrxlpjdujmtytm.supabase.co/storage/v1/object/public/og-images/og-image.png">
+
+    <!-- SEO Meta Tags -->
+    <title>Guilda - Encontre seu Co-fundador Perfeito | Builders &amp; Sellers</title>
+    <meta name="keywords" content="cofundador, cofounder, startup, builder, seller, investidor, angel investor, desenvolvedor, marketing, match, tinder startups, encontrar sócio, tech cofounder, parceiro de negócios, investimento anjo" />
+    <meta name="author" content="Guilda" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+
+    <!-- Preconnect to critical origins -->
+    <link rel="preconnect" href="https://kcyyelhrxlpjdujmtytm.supabase.co" crossorigin>
+    
+    <!-- Google Fonts: Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800&family=Poppins:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800&family=Poppins:wght@400;500&display=swap" rel="stylesheet"></noscript>
+    
+    <!-- Preload LCP image for mobile -->
+    <link rel="preload" as="image" href="/hero-poster-mobile.jpg" media="(max-width: 767px)" fetchpriority="high">
+    <!-- Preload LCP image for desktop -->
+    <link rel="preload" as="image" href="/hero-poster.jpg" media="(min-width: 768px)" fetchpriority="high">
+
+    <!-- Meta Pixel Code - deferred for performance -->
+    <script>
+    function loadFBPixel() {
+      if (window.fbPixelLoaded) return;
+      window.fbPixelLoaded = true;
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '920664307313223');
+      fbq('track', 'PageView');
+    }
+    // Load FB Pixel after user interaction or after 4s
+    if (document.readyState === 'complete') {
+      setTimeout(loadFBPixel, 4000);
+    } else {
+      window.addEventListener('load', function() { setTimeout(loadFBPixel, 4000); });
+    }
+    ['click', 'scroll', 'keydown', 'touchstart'].forEach(function(evt) {
+      document.addEventListener(evt, loadFBPixel, { once: true, passive: true });
+    });
+    </script>
+    <!-- End Meta Pixel Code -->
+
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "vp4dkiiadt");
+    </script>
+    <!-- End Microsoft Clarity -->
+    
+    <!-- Fonts loaded via Google Fonts above -->
+    <!-- Browser appearance -->
+    <meta name="theme-color" content="#7610DC" />
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    
+    <!-- Google Analytics - Deferred for performance -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      
+      // Defer GA loading until after page is interactive
+      function loadGA() {
+        if (window.gaLoaded) return;
+        window.gaLoaded = true;
+        var script = document.createElement('script');
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-FK83FT4XW9';
+        script.async = true;
+        script.onload = function() {
+          gtag('js', new Date());
+          gtag('config', 'G-FK83FT4XW9', { debug_mode: false });
+        };
+        document.head.appendChild(script);
+      }
+      
+      // Load GA after user interaction or after 3s, whichever comes first
+      if (document.readyState === 'complete') {
+        setTimeout(loadGA, 3000);
+      } else {
+        window.addEventListener('load', function() { setTimeout(loadGA, 3000); });
+      }
+      ['click', 'scroll', 'keydown', 'touchstart'].forEach(function(evt) {
+        document.addEventListener(evt, loadGA, { once: true, passive: true });
+      });
+    </script>
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Guilda",
+        "url": "https://guilda.app.br",
+        "logo": "https://guilda.app.br/og-image.png",
+        "description": "Plataforma gamificada para encontrar co-fundadores. Conecta Builders e Sellers para criar startups.",
+        "sameAs": [
+          "https://twitter.com/GuildaApp"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "contato@guilda.app.br"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Guilda",
+        "description": "Plataforma gamificada para encontrar co-fundadores. Conecta Builders (desenvolvedores) e Sellers (marketing/vendas) para criar startups.",
+        "url": "https://guilda.app.br",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web, iOS, Android",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "BRL"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "ratingCount": "14"
+        },
+        "featureList": [
+          "Matching gamificado estilo RPG",
+          "Conexão entre desenvolvedores e profissionais de negócios",
+          "Projetos colaborativos",
+          "Chat em tempo real"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Guilda",
+        "url": "https://guilda.app.br",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://guilda.app.br/startups?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    ]
+    </script>
+  <meta property="og:title" content="Guilda - Encontre seu Co-fundador Perfeito | Builders &amp; Sellers">
+  <meta name="twitter:title" content="Guilda - Encontre seu Co-fundador Perfeito | Builders &amp; Sellers">
+  <meta name="description" content="Pare de perder meses em networking. A Guilda faz o match entre devs e profissionais de negócios — e acelera a dupla do match ao MVP em 15 dias.">
+  <meta property="og:description" content="Pare de perder meses em networking. A Guilda faz o match entre devs e profissionais de negócios — e acelera a dupla do match ao MVP em 15 dias.">
+  <meta name="twitter:description" content="Pare de perder meses em networking. A Guilda faz o match entre devs e profissionais de negócios — e acelera a dupla do match ao MVP em 15 dias.">
+</head>
+
+  <body>
+    <!-- Meta Pixel noscript fallback -->
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=920664307313223&ev=PageView&noscript=1" /></noscript>
+    <div id="root">
+      <!-- Initial loading skeleton shown before React mounts -->
+      <div class="min-h-screen flex flex-col items-center justify-center relative overflow-hidden" style="background:linear-gradient(135deg,hsl(268 89% 46%/0.1),hsl(25 95% 53%/0.1))">
+        <div style="width:200px;height:48px;background:hsl(268 89% 46%/0.2);border-radius:8px" class="animate-pulse"></div>
+        <div style="width:300px;height:24px;background:hsl(0 0% 50%/0.1);border-radius:4px;margin-top:16px" class="animate-pulse"></div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

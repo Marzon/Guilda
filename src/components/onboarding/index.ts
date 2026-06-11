@@ -1,0 +1,11 @@
+// Barrel export for onboarding components
+export { ArchetypeStep } from "./ArchetypeStep";
+export { ConfirmationStep } from "./ConfirmationStep";
+export { InvestorTrackRecordStep } from "./InvestorTrackRecordStep";
+export { OnboardingProgress } from "./OnboardingProgress";
+export { ProfileStep } from "./ProfileStep";
+export { ProjectStep } from "./ProjectStep";
+export { SignupSourceStep } from "./SignupSourceStep";
+export { SkillsStep } from "./SkillsStep";
+export { TutorialStep } from "./TutorialStep";
+export { WelcomeModal } from "./WelcomeModal";

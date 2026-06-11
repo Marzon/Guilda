@@ -1,0 +1,19 @@
+project_id = "kcyyelhrxlpjdujmtytm"
+
+[functions.llms-full-txt]
+verify_jwt = false
+
+[functions.send-quiz-email]
+verify_jwt = false
+
+[functions.og-quiz]
+verify_jwt = false
+
+[functions.sync-lead-to-brevo]
+verify_jwt = false
+
+[functions.sync-lead-to-core]
+verify_jwt = false
+
+[functions.jobs-feed-xml]
+verify_jwt = false

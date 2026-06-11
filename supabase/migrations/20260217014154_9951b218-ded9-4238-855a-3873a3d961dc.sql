@@ -1,0 +1,1 @@
+ALTER TABLE public.mkt_blog_posts DROP CONSTRAINT mkt_blog_posts_created_by_fkey;

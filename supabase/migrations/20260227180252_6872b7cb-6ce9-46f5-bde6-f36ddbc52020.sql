@@ -1,0 +1,1 @@
+ALTER TABLE public.aceleracao_inscritos ADD COLUMN email TEXT NOT NULL DEFAULT '';
