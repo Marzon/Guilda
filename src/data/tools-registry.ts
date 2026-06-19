@@ -46,7 +46,7 @@ export const TOOLS_REGISTRY: ToolDefinition[] = [
   {
     id: "guilda-ia-mvp",
     icon: Sparkles,
-    path: "/tools/guilda-ia-mvp",
+    path: "/ferramentas-empreendedores/guilda-ia-mvp",
     category: "growth",
     color: "text-violet-600",
     bg: "bg-violet-100",

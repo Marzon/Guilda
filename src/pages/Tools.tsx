@@ -59,7 +59,7 @@ const CATEGORIES: Category[] = [
 
 const TOOLS: Tool[] = [
   { id: 'cold-outreach', icon: Send, path: '/tools/cold-outreach', category: 'sales', featured: true, isNew: true },
-  { id: 'guilda-ia-mvp', icon: Sparkles, path: '/tools/guilda-ia-mvp', category: 'growth', featured: true, isNew: true },
+  { id: 'guilda-ia-mvp', icon: Sparkles, path: '/ferramentas-empreendedores/guilda-ia-mvp', category: 'growth', featured: true, isNew: true },
   { id: 'knowledge-roadmap', icon: BookOpen, path: '/tools/knowledge-roadmap', category: 'growth', featured: true, isNew: true },
   { id: 'mvp-vibecoding', icon: Sparkles, path: '/tools/mvp-vibecoding', category: 'growth', featured: false, isNew: true },
   { id: 'markup-calculator', icon: Calculator, path: '/tools/markup-calculator', category: 'sales', featured: true, isNew: true },
@@ -287,7 +287,7 @@ const NovidadesContent = memo(function NovidadesContent({
         
         {/* GuildaIA MVP Builder - Featured Banner — flat */}
         <div 
-          onClick={() => handleNavigate('/tools/guilda-ia-mvp')}
+          onClick={() => handleNavigate('/ferramentas-empreendedores/guilda-ia-mvp')}
           className="group relative mb-10 sm:mb-16 overflow-hidden rounded-2xl lg:rounded-[2rem] bg-[#7610DC] p-6 sm:p-8 cursor-pointer hover:bg-[#7610DC]/95 transition-colors"
         >
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
