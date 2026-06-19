@@ -20,7 +20,7 @@ services:
       - root_default
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.guilda-www.rule=Host(`www.guilda.app.br`)"
+      - "traefik.http.routers.guilda-www.rule=Host(`www.guilda.app.br`) || Host(`guilda.app.br`)"
       - "traefik.http.services.guilda-www.loadbalancer.server.port=4001"
       - "traefik.http.routers.guilda-www.entrypoints=websecure"
       - "traefik.http.routers.guilda-www.tls.certresolver=mytlschallenge"
