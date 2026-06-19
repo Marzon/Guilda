@@ -90,7 +90,7 @@ export const LandingNavbar = memo(function LandingNavbar() {
     { href: "/vagas", label: "Vagas" },
     { href: "/blog", label: "Blog" },
     { href: "/success-stories", label: "Histórias" },
-    { href: "/pricing", label: "Planos" },
+    { href: "/", label: "Início" },
   ];
 
   return (

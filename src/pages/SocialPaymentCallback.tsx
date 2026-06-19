@@ -22,7 +22,7 @@ const SocialPaymentCallback = () => {
       window.location.href = coreUrl;
     } else {
       // No valid token - redirect to pricing page
-      navigate('/pricing', { replace: true });
+      navigate('/', { replace: true });
     }
   }, [navigate]);
 

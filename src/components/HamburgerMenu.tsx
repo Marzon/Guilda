@@ -184,12 +184,10 @@ export const HamburgerMenu = ({ isPremium, onLogout }: HamburgerMenuProps) => {
                     </div>
                     <div className="min-w-0 flex-1 flex flex-col">
                       <p className="text-xl font-bold text-foreground leading-tight truncate">{username}</p>
-                      {isPremium && (
-                        <span className="inline-flex items-center gap-1 mt-2 bg-amber-50 dark:bg-amber-900/20 text-amber-500 text-xs font-bold px-2.5 py-1 rounded-full border border-amber-100 dark:border-amber-800/50 w-fit">
-                          <Crown className="w-3.5 h-3.5" />
-                          PREMIUM
-                        </span>
-                      )}
+                      <span className="inline-flex items-center gap-1 mt-2 bg-green-50 dark:bg-green-900/20 text-green-600 text-xs font-bold px-2.5 py-1 rounded-full border border-green-100 dark:border-green-800/50 w-fit">
+                        <Crown className="w-3.5 h-3.5" />
+                        {t('premium') || 'GRATUITO'}
+                      </span>
                     </div>
                   </div>
                   <button 
@@ -201,25 +199,7 @@ export const HamburgerMenu = ({ isPremium, onLogout }: HamburgerMenuProps) => {
                 </div>
               </div>
 
-              {/* Upsell Banner - Only for free users */}
-              {!isPremium && (
-                <button
-                  onClick={() => handleNavigate("/pricing")}
-                  className="mx-4 mt-4 p-3 rounded-xl bg-gradient-to-r from-amber-500 via-orange-500 to-rose-500 text-white relative overflow-hidden group"
-                >
-                  <div className="absolute inset-0 bg-gradient-to-r from-amber-400 via-orange-400 to-rose-400 opacity-0 group-hover:opacity-100 transition-opacity" />
-                  <div className="relative flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-lg bg-white/20 backdrop-blur flex items-center justify-center flex-shrink-0">
-                      <Sparkles className="w-5 h-5" />
-                    </div>
-                    <div className="flex-1 text-left">
-                      <p className="font-bold text-sm">Seja Premium</p>
-                      <p className="text-[11px] opacity-90">Conexões ilimitadas + recursos exclusivos</p>
-                    </div>
-                    <Zap className="w-5 h-5 flex-shrink-0" />
-                  </div>
-                </button>
-              )}
+
 
 
               {/* Menu Items - Enhanced spacing and icons */}

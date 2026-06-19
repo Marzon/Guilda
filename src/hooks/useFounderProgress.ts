@@ -99,7 +99,7 @@ export const founderGuideModules: GuideModule[] = [
         moduleId: 'premium-features',
         titleKey: 'founderGuide.modules.premiumFeatures.items.knowPlans.title',
         descriptionKey: 'founderGuide.modules.premiumFeatures.items.knowPlans.description',
-        route: ROUTES.pricing,
+        route: '/',
       },
       {
         id: 'ai-match',

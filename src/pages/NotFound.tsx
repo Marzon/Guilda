@@ -93,7 +93,7 @@ const NotFound = () => {
               <Link to={getLocalizedPath("/tools", currentLanguage)} className="text-[#7610DC] hover:text-[#4308B0] hover:underline text-sm font-medium">
                 {t('notFound.links.tools')}
               </Link>
-              <Link to="/pricing" className="text-[#7610DC] hover:text-[#4308B0] hover:underline text-sm font-medium">
+              <Link to="/" className="text-[#7610DC] hover:text-[#4308B0] hover:underline text-sm font-medium">
                 {t('notFound.links.pricing')}
               </Link>
             </div>
