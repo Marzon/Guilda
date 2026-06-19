@@ -13,7 +13,7 @@ import {
   XCircle, Loader2, Copy, Sparkles, Crown
 } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { FounderUnlockedDialog } from "./FounderUnlockedDialog";
+
 
 interface SocialPaymentDialogProps {
   open: boolean;
@@ -117,7 +117,7 @@ export const SocialPaymentDialog = ({ open, onOpenChange }: SocialPaymentDialogP
   const [imageFile, setImageFile] = useState<File | null>(null);
   const [imagePreview, setImagePreview] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [showUnlockedDialog, setShowUnlockedDialog] = useState(false);
+
   const [result, setResult] = useState<{
     success: boolean;
     message: string;
@@ -253,11 +253,10 @@ export const SocialPaymentDialog = ({ open, onOpenChange }: SocialPaymentDialogP
   const handleSuccessClose = () => {
     // Close this dialog and show the unlocked benefits dialog
     onOpenChange(false);
-    setShowUnlockedDialog(true);
+    handlePaymentSuccess();
   };
 
-  const handleUnlockedDialogClose = () => {
-    setShowUnlockedDialog(false);
+  const handlePaymentSuccess = () => {
     handleReset();
     // Navigate to tavern
     navigate('/tavern');
@@ -486,12 +485,6 @@ export const SocialPaymentDialog = ({ open, onOpenChange }: SocialPaymentDialogP
         )}
       </DialogContent>
 
-      {/* Unlocked Benefits Dialog */}
-      <FounderUnlockedDialog 
-        open={showUnlockedDialog} 
-        onOpenChange={handleUnlockedDialogClose}
-        expiresAt={result?.expiresAt}
-      />
     </Dialog>
   );
 };

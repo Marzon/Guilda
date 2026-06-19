@@ -323,7 +323,7 @@ const Sellers = () => {
                   {t('sellers.createBusinessProfile')}
                 </Button>
               </Link>
-              <Link to="/pricing" className="w-full sm:w-auto">
+              <Link to="/" className="w-full sm:w-auto">
                 <Button variant="outline" size="lg" className="border-gray-200 text-black hover:bg-gray-50 rounded-xl text-base px-6 sm:px-8 py-5 sm:py-6 transition-colors w-full">
                   {t('sellers.viewPlans')}
                 </Button>

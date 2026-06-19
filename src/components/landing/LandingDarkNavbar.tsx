@@ -46,7 +46,7 @@ export const LandingDarkNavbar = memo(function LandingDarkNavbar() {
     { href: "/aceleracao", label: t("landing.nav.acceleration", "Aceleração"), isRoute: true },
     { href: "/vagas", label: t("nav.jobs", "Vagas"), isRoute: true },
     { href: "/success-stories", label: "Histórias", isRoute: true },
-    { href: "/pricing", label: "Planos", isRoute: true },
+    { href: "/", label: "Início", isRoute: true },
   ];
 
   return (

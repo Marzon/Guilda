@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { fadeUp } from "@/lib/scroll-animations";
 
 const METRICS = [
-  { number: "433+", label: "Founders cadastrados" },
+  { number: "600+", label: "Founders cadastrados" },
   { number: "15", label: "Dias para lançar" },
   { number: "R$ 0", label: "Para começar" },
 ];

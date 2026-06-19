@@ -95,7 +95,7 @@ export const AuthTestimonial = () => {
   };
 
   const displayTestimonial = testimonials?.[currentIndex] || fallbackTestimonial;
-  const founderCount = stats?.total_profiles ? Math.floor(stats.total_profiles / 10) * 10 : 300;
+  const founderCount = stats?.total_profiles ? Math.floor(stats.total_profiles / 10) * 10 : 600;
 
   const archetypeLabel = {
     BUILDER: "Builder",

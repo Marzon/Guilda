@@ -1,105 +1,142 @@
 import { Helmet } from "react-helmet-async";
-import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { useQueryClient } from "@tanstack/react-query";
-import { PixPaymentModal } from "@/components/monetization/PixPaymentModal";
-import { VoucherRedemption } from "@/components/monetization/VoucherRedemption";
-import { SocialPaymentDialog } from "@/components/monetization/SocialPaymentDialog";
-import { SocialPaymentMarketingDialog } from "@/components/monetization/SocialPaymentMarketingDialog";
-import { CreditPlansSection } from "@/components/monetization/CreditPlansSection";
 import { useLanguage } from "@/hooks/useLanguage";
-import { useSubscription } from "@/hooks/useSubscription";
-import { useAuth } from "@/hooks/useAuth";
 import { LandingDarkNavbar, LandingFooter } from "@/components/landing";
-
+import { Button } from "@/components/ui/button";
+import { CheckCircle, Sparkles, Zap, Users, MessageCircle, Infinity } from "lucide-react";
 
 const Pricing = () => {
   const { currentLanguage } = useLanguage();
-  const queryClient = useQueryClient();
-  const { data: authData } = useAuth();
-  const { refresh: refreshSubscription } = useSubscription(authData?.user?.id || null);
-  const [pixModalOpen, setPixModalOpen] = useState(false);
-  const [socialDialogOpen, setSocialDialogOpen] = useState(false);
-  const [marketingDialogOpen, setMarketingDialogOpen] = useState(false);
-  const [selectedProduct, setSelectedProduct] = useState<"founder_pass" | "founders_pass">("founder_pass");
+  const navigate = useNavigate();
 
   const lang = currentLanguage as 'pt' | 'en' | 'es';
-  const isLoggedIn = !!authData?.user;
 
-  useEffect(() => {
-    if (authData?.user?.id) {
-      queryClient.invalidateQueries({ queryKey: ['subscription', authData.user.id] });
-    }
-  }, [authData?.user?.id]);
+  const content = {
+    pt: {
+      title: "Tudo gratuito, sempre",
+      subtitle: "Encontre seu co-fundador ideal sem pagar nada. Todas as funcionalidades liberadas.",
+      cta: "Criar Perfil Grátis",
+      features: [
+        { icon: Users, text: "Matches ilimitados com founders" },
+        { icon: MessageCircle, text: "Mensagens ilimitadas" },
+        { icon: Zap, text: "Aceleração e mentoria" },
+        { icon: Infinity, text: "Sem limites — tudo incluso" },
+      ],
+      metaTitle: "Guilda - Gratuito para Todos",
+      metaDesc: "Encontre seu co-fundador de graça. Matching, aceleração, comunidade. Tudo liberado.",
+    },
+    en: {
+      title: "Free for everyone, always",
+      subtitle: "Find your ideal co-founder without paying anything. All features unlocked.",
+      cta: "Create Free Profile",
+      features: [
+        { icon: Users, text: "Unlimited matches with founders" },
+        { icon: MessageCircle, text: "Unlimited messaging" },
+        { icon: Zap, text: "Acceleration and mentoring" },
+        { icon: Infinity, text: "No limits — everything included" },
+      ],
+      metaTitle: "Guilda - Free for Everyone",
+      metaDesc: "Find your co-founder for free. Matching, acceleration, community. Everything unlocked.",
+    },
+    es: {
+      title: "Todo gratis, siempre",
+      subtitle: "Encuentra tu co-fundador ideal sin pagar nada. Todas las funciones liberadas.",
+      cta: "Crear Perfil Gratis",
+      features: [
+        { icon: Users, text: "Matches ilimitados con founders" },
+        { icon: MessageCircle, text: "Mensajes ilimitados" },
+        { icon: Zap, text: "Aceleración y mentoría" },
+        { icon: Infinity, text: "Sin límites — todo incluido" },
+      ],
+      metaTitle: "Guilda - Gratis para Todos",
+      metaDesc: "Encuentra tu co-fundador gratis. Matching, aceleración, comunidad. Todo liberado.",
+    },
+  };
 
-  useEffect(() => {
-    if (!pixModalOpen && authData?.user?.id) {
-      refreshSubscription();
-    }
-  }, [pixModalOpen]);
+  const c = content[lang] || content.pt;
 
   return (
     <div className="min-h-screen bg-white">
       <Helmet>
-        <title>Planos e Preços | Guilda - Encontre seu Co-fundador</title>
-        <meta name="description" content="Comece grátis ou ganhe 6 meses de acesso Founder divulgando nas redes sociais. Planos a partir de R$ 39,90/mês para encontrar seu cofundador ideal." />
+        <title>{c.metaTitle}</title>
+        <meta name="description" content={c.metaDesc} />
         <link rel="canonical" href="https://www.guilda.app.br/pricing" />
-        <meta property="og:title" content="Planos e Preços | Guilda" />
-        <meta property="og:description" content="Comece grátis ou ganhe 6 meses de acesso Founder divulgando nas redes sociais. Encontre seu cofundador ideal." />
+        <meta property="og:title" content={c.metaTitle} />
+        <meta property="og:description" content={c.metaDesc} />
         <meta property="og:url" content="https://www.guilda.app.br/pricing" />
         <meta property="og:image" content="https://api.guilda.app.br/storage/v1/object/public/og-images/og-image.png" />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "name": "Planos e Preços - Guilda",
-            "description": "Planos para encontrar seu cofundador ideal. Comece grátis.",
-            "url": "https://www.guilda.app.br/pricing"
-          })}
-        </script>
       </Helmet>
+
       <LandingDarkNavbar />
 
-      {/* Header */}
+      {/* Hero Section */}
       <header className="pt-24 sm:pt-32 pb-8 sm:pb-12 text-center px-5">
-        <p className="text-xs sm:text-sm font-semibold uppercase tracking-widest text-[#7610dc] mb-3 sm:mb-4">
-          {lang === 'pt' ? 'Planos' : lang === 'es' ? 'Planes' : 'Pricing'}
-        </p>
+        <div className="inline-flex items-center gap-2 bg-green-50 text-green-700 text-xs sm:text-sm font-semibold uppercase tracking-widest px-4 py-2 rounded-full mb-4">
+          <Sparkles className="w-4 h-4" />
+          {lang === 'pt' ? '100% Gratuito' : lang === 'es' ? '100% Gratis' : '100% Free'}
+        </div>
         <h1
-          className="text-2xl sm:text-4xl md:text-6xl font-serif font-thin leading-[0.95] tracking-tight text-black mb-4 sm:mb-6 whitespace-pre-line"
+          className="text-3xl sm:text-5xl md:text-7xl font-serif font-thin leading-[0.95] tracking-tight text-black mb-4 sm:mb-6 px-2"
           style={{ fontFamily: "'Merriweather', 'Georgia', serif" }}
         >
-          {lang === 'pt' ? 'Encontre seu sócio.\nLance sua startup.' : lang === 'es' ? 'Encuentra tu socio.\nLanza tu startup.' : 'Find your co-founder.\nLaunch your startup.'}
+          {c.title}
         </h1>
-        <p className="text-sm sm:text-lg text-gray-500 max-w-2xl mx-auto leading-relaxed px-2">
-          {lang === 'pt' 
-            ? 'Comece grátis ou divulgue nas redes para virar Founder. Investimento menor que um café por dia.'
-            : lang === 'es'
-            ? 'Empieza gratis o comparte en redes para ser Founder. Inversión menor que un café al día.'
-            : 'Start free or share on social media to become Founder. Investment less than a coffee per day.'}
+        <p className="text-sm sm:text-lg text-gray-500 max-w-2xl mx-auto leading-relaxed px-2 mb-8">
+          {c.subtitle}
         </p>
+        <Button
+          size="lg"
+          className="bg-[#7610dc] hover:bg-[#5e0db0] text-white px-8 py-6 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all"
+          onClick={() => navigate('/auth')}
+        >
+          <Sparkles className="w-5 h-5 mr-2" />
+          {c.cta}
+        </Button>
       </header>
 
-      <main className="max-w-6xl mx-auto px-4 sm:px-4 lg:px-6 pb-16 sm:pb-24">
-        <CreditPlansSection />
+      {/* Features Grid */}
+      <main className="max-w-4xl mx-auto px-4 sm:px-6 pb-16 sm:pb-24">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+          {c.features.map((feature, index) => {
+            const Icon = feature.icon;
+            return (
+              <div
+                key={index}
+                className="flex items-start gap-4 p-6 rounded-2xl bg-gray-50 border border-gray-100"
+              >
+                <div className="shrink-0 w-12 h-12 rounded-xl bg-[#7610dc]/10 flex items-center justify-center">
+                  <Icon className="w-6 h-6 text-[#7610dc]" />
+                </div>
+                <div className="text-left">
+                  <p className="text-base sm:text-lg font-medium text-gray-900">
+                    {feature.text}
+                  </p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Bottom CTA */}
+        <div className="mt-12 text-center">
+          <p className="text-sm text-gray-400 mb-4">
+            {lang === 'pt' ? 'Sem pegadinhas. Sem planos. Sem limite de uso.' :
+             lang === 'es' ? 'Sin trampas. Sin planes. Sin límite de uso.' :
+             'No tricks. No plans. No usage limits.'}
+          </p>
+          <Button
+            variant="outline"
+            size="lg"
+            className="border-[#7610dc] text-[#7610dc] hover:bg-[#7610dc] hover:text-white px-8 py-6 text-lg rounded-xl transition-all"
+            onClick={() => navigate('/auth')}
+          >
+            <CheckCircle className="w-5 h-5 mr-2" />
+            {c.cta}
+          </Button>
+        </div>
       </main>
 
       <LandingFooter />
-
-      {/* Modals */}
-      <PixPaymentModal
-        open={pixModalOpen}
-        onOpenChange={setPixModalOpen}
-        productType={selectedProduct}
-      />
-      <SocialPaymentDialog 
-        open={socialDialogOpen} 
-        onOpenChange={setSocialDialogOpen} 
-      />
-      <SocialPaymentMarketingDialog
-        open={marketingDialogOpen}
-        onOpenChange={setMarketingDialogOpen}
-      />
     </div>
   );
 };

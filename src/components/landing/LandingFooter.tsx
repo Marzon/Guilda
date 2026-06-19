@@ -13,7 +13,7 @@ export const LandingFooter = () => {
     {
       title: t('landing.footer.col.product', 'Produto'),
       links: [
-        { label: t('landing.footer.plans', 'Planos'), path: "/pricing" },
+        { label: t('landing.footer.plans', 'Planos'), path: "/" },
         { label: t('nav.jobs', 'Vagas'), path: "/vagas" },
         { label: "Startups", path: "/startups" },
         { label: "Manifesto", path: "/manifesto" },

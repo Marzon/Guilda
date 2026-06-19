@@ -323,7 +323,7 @@ export function QuizResult({
           Seu {archetype.idealMatch} pode estar na Guilda
         </h3>
         <p className="text-white/70 text-sm mb-5">
-          433 founders. Matching por compatibilidade. 100% grátis para começar.
+          600+ founders. Matching por compatibilidade. 100% grátis para começar.
         </p>
         <a
           href="https://guilda.app.br"

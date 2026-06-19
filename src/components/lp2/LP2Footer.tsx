@@ -5,7 +5,7 @@ const COLUMNS = [
   {
     header: "Produto",
     links: [
-      { label: "Planos", href: "/pricing" },
+      { label: "Início", href: "/" },
       { label: "Vagas", href: "/vagas" },
       { label: "Startups", href: "/startups" },
       { label: "Manifesto", href: "/manifesto" },
