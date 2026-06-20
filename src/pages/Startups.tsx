@@ -98,7 +98,7 @@ const Startups = () => {
                 ))}
               </div>
             </>
-          ) : (
+          ) : openJobs.length > 0 ? null : (
             <div className="text-center py-20 space-y-4">
               <div className="w-20 h-20 mx-auto rounded-2xl border border-gray-200 flex items-center justify-center">
                 <Rocket className="w-10 h-10 text-gray-400" />
