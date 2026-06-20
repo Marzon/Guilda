@@ -62,12 +62,15 @@ export function MvpBuilderCTA() {
           </div>
         </div>
 
-        <div className="mt-10">
-          <Button onClick={handleCTA} size="lg" className="w-full sm:w-auto max-w-[400px] mx-auto bg-[#F97316] hover:bg-[#F97316]/90 text-white font-bold text-base rounded-xl px-8 py-4 h-auto transition-colors duration-200">
+        <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
+          <Button onClick={handleCTA} size="lg" className="w-full sm:w-auto max-w-[400px] bg-[#F97316] hover:bg-[#F97316]/90 text-white font-bold text-base rounded-xl px-8 py-4 h-auto transition-colors duration-200">
             {t('landing.mvpBuilder.cta')} <ArrowRight className="w-4 h-4 ml-2" />
           </Button>
-          <p className="text-white/60 text-xs mt-2 text-center">{t('landing.mvpBuilder.ctaSubtitle')}</p>
+          <Button onClick={() => navigate("/ferramentas-empreendedores")} size="lg" variant="outline" className="w-full sm:w-auto max-w-[400px] border-white/20 text-white hover:bg-white/10 font-semibold text-base rounded-xl px-8 py-4 h-auto transition-colors duration-200">
+            Ferramentas Gratuitas
+          </Button>
         </div>
+        <p className="text-white/60 text-xs mt-2 text-center">{t('landing.mvpBuilder.ctaSubtitle')}</p>
       </div>
     </section>
   );
