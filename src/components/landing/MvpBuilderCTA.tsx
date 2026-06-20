@@ -1,11 +1,11 @@
 import { MessageSquare, Sparkles, Rocket, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { buildCoreAppUrl } from "@/lib/url-utils";
-import { CORE_APP_URL } from "@/lib/constants";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 
 export function MvpBuilderCTA() {
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
   const steps = [
     { icon: MessageSquare, title: t('landing.mvpBuilder.step1'), titleMobile: t('landing.mvpBuilder.step1Mobile'), description: t('landing.mvpBuilder.step1Desc') },
@@ -14,7 +14,7 @@ export function MvpBuilderCTA() {
   ];
 
   const handleCTA = () => {
-    window.location.href = buildCoreAppUrl(CORE_APP_URL, "/ferramentas-empreendedores/guilda-ia-mvp");
+    navigate("/ferramentas-empreendedores/guilda-ia-mvp");
   };
 
   return (
