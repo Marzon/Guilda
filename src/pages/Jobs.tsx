@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -17,6 +17,10 @@ const APP_URL = 'https://suprema.guilda.app.br';
 const Jobs = () => {
   const { t } = useTranslation();
   const { jobs, count, isLoading } = useOpenJobs();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const [selectedJob, setSelectedJob] = useState<Job | null>(null);
 
