@@ -32,12 +32,12 @@ export const HeroSection = () => {
   return (
     <section ref={sectionRef} className="relative w-full overflow-hidden bg-white">
       {/* Desktop video */}
-      <div className="hidden md:block relative w-full h-[calc(100vh-56px)] bg-cover bg-[center_top]" style={{ backgroundImage: 'url(/hero-poster.jpg)' }}>
+      <div className="hidden md:block relative w-full h-[calc(100vh-56px)] bg-cover bg-[center_20%]" style={{ backgroundImage: 'url(/hero-poster.jpg)' }}>
         <video
           ref={desktopVideoRef}
           autoPlay muted loop playsInline preload="metadata"
           poster="/hero-poster.jpg"
-          className="w-full h-full object-cover object-[center_top]"
+          className="w-full h-full object-cover object-[center_20%] -mt-8"
         >
           <source src="/hero-video-clean.mp4" type="video/mp4" />
         </video>
@@ -51,7 +51,7 @@ export const HeroSection = () => {
         poster="/hero-poster-mobile.jpg"
         // @ts-ignore fetchPriority not yet in React types
         fetchPriority="high"
-        className="block md:hidden w-full h-auto"
+        className="block md:hidden w-full h-auto -mt-6"
       >
         <source src="/hero-video-mobile-clean.mp4" type="video/mp4" />
       </video>

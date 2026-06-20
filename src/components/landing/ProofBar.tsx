@@ -1,5 +1,7 @@
 import { useRef, useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { usePlatformStats } from "@/hooks/usePlatformStats";
+import { Skeleton } from "@/components/ui/skeleton";
 
 function useCountUp(target: number, duration: number, isVisible: boolean) {
   const [count, setCount] = useState(0);
@@ -18,10 +20,14 @@ function useCountUp(target: number, duration: number, isVisible: boolean) {
   return count;
 }
 
+const FALLBACK_COUNT = 600;
+
 export const ProofBar = () => {
   const ref = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
-  const count = useCountUp(500, 1500, isVisible);
+  const { data: stats, isLoading } = usePlatformStats();
+  const founderTarget = stats?.total_profiles || FALLBACK_COUNT;
+  const count = useCountUp(founderTarget, 1500, isVisible);
   const { t } = useTranslation();
 
   const supportMetrics = [
