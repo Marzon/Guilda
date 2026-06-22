@@ -104,28 +104,9 @@ export const AccelerationSection = () => {
           )}
 
           <div className="flex flex-col items-center gap-6">
-            <Button onClick={handleClick} size="lg" className="w-full sm:w-auto max-w-[400px] mx-auto bg-[#F97316] hover:bg-[#F97316]/90 text-white font-bold text-base sm:text-lg px-8 sm:px-12 py-4 sm:py-5 h-auto rounded-xl transition-colors duration-200">
-              <Flame className="w-5 h-5 mr-2 flex-shrink-0" />
-              <span>{t('landing.accelerationSection.cta')}</span>
-              <ArrowRight className="w-5 h-5 ml-2 flex-shrink-0" />
+            <Button onClick={handleClick} variant="outline" className="w-full sm:w-auto max-w-[400px] mx-auto border-white/20 text-white/70 hover:text-white hover:border-white/40 text-sm px-6 py-2 h-auto rounded-lg">
+              {t('landing.accelerationSection.saibaMais', 'Saiba mais')}
             </Button>
-
-            <p className="text-white/50 text-sm">{t('landing.accelerationSection.ctaSubtitle')}</p>
-
-            <div className="flex flex-wrap justify-center gap-6 sm:gap-10">
-              <div className="text-center">
-                <p className="text-2xl font-serif font-thin text-white" style={{ fontFamily: "'Merriweather', 'Georgia', serif" }}>94%</p>
-                <p className="text-xs text-white/50">{t('landing.accelerationSection.kpiMatchRate')}</p>
-              </div>
-              <div className="text-center">
-                <p className="text-2xl font-serif font-thin text-white" style={{ fontFamily: "'Merriweather', 'Georgia', serif" }}>3 {t('landing.accelerationSection.kpiSavings')}</p>
-                <p className="text-xs text-white/50">{t('landing.accelerationSection.kpiSavings')}</p>
-              </div>
-              <div className="text-center">
-                <p className="text-2xl font-serif font-thin text-white" style={{ fontFamily: "'Merriweather', 'Georgia', serif" }}>6 {t('landing.accelerationSection.kpiFreeApp')}</p>
-                <p className="text-xs text-white/50">{t('landing.accelerationSection.kpiFreeApp')}</p>
-              </div>
-            </div>
           </div>
         </div>
       </div>
