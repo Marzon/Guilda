@@ -36,7 +36,7 @@ const PLACEHOLDER_COHORT: Cohort = {
   id: "placeholder",
   name: "Próximo Ciclo",
   start_date: new Date(Date.now() + 14 * 24 * 60 * 60 * 1000).toISOString(), // 2 weeks from now
-  status: "OPEN",
+  status: "PLANNED",
   whatsapp_link: null,
   max_slots: 30,
   created_at: new Date().toISOString(),
