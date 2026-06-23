@@ -10,6 +10,7 @@ import { PageSkeleton } from "@/components/PageSkeleton";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { buildCoreAppUrl } from "@/lib/url-utils";
 import { ToolsRedirect } from "@/components/routing/ToolsRedirect";
+import { ScrollToTop } from "@/components/ScrollToTop";
 
 const APP_URL = 'https://suprema.guilda.app.br';
 
@@ -133,6 +134,7 @@ const App = () => (
               <Sonner />
             </Suspense>
             <BrowserRouter>
+              <ScrollToTop />
               <Suspense fallback={null}>
                 <GoogleAnalytics />
                 <PageviewTracker />
