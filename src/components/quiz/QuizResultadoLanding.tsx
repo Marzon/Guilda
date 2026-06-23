@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const STORAGE_BASE = `https://${import.meta.env.VITE_SUPABASE_PROJECT_ID}.supabase.co/storage/v1/object/public/quiz-reports`;
+const STORAGE_BASE = `https://api.guilda.app.br/storage/v1/object/public/quiz-reports`;
 
 const ARCHETYPE_DATA: Record<string, { name: string; image: string; emoji: string }> = {
   mago: { name: "Mago do Código", image: "og-mago.png", emoji: "🧙‍♂️" },
